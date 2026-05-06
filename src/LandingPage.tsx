@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import './LandingPage.css'
 
 // Hook para animação de troca de palavra

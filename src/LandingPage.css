@@ -659,11 +659,19 @@
   .hero-title { font-size: 2.6rem; }
   .about-grid, .products-grid, .isis-grid, .footer-inner { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; align-items: flex-start; }
+  
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  
   .isis-avatar-wrap { height: 260px; }
   .isis-ring-1 { width: 200px; height: 200px; }
   .isis-avatar-img { width: 85px; height: 85px; }
   .isis-duo { gap: 12px; }
+  
   .cta-card { min-width: auto; width: 100%; }
-  .footer-inner { padding: 40px 0; gap: 32px; }
+  
+  .features-header-logo { max-width: 220px; height: 52px; }
+  .footer-inner { padding: 40px 0; gap: 32px; text-align: center; }
+  .footer-brand { align-items: center; }
+  .footer-logo { max-width: 220px; height: 60px; }
 }
