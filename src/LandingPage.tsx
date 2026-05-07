@@ -541,21 +541,29 @@ export default function LandingPage() {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500); // Pequeno delay para garantir que o layout renderizou
+      }, 500);
     };
 
-    // 1. Verificar parâmetro de query '?p=...'
-    const params = new URLSearchParams(window.location.search);
-    const product = params.get('p');
-    if (product === 'arena') {
+    // 1. Verificar Pathname (Clean URLs)
+    const path = window.location.pathname.toLowerCase();
+    if (path === '/fluxo7arena') {
       scrollToSection('arena');
-    } else if (product === 'isis' || product === 'isis-agenda') {
+    } else if (path === '/isisagenda') {
       scrollToSection('isis-agenda');
     } else {
-      // 2. Se não houver param, verificar o hash '#...'
-      const hash = window.location.hash.replace('#', '');
-      if (hash) {
-        scrollToSection(hash);
+      // 2. Verificar parâmetro de query '?p=...'
+      const params = new URLSearchParams(window.location.search);
+      const product = params.get('p');
+      if (product === 'arena') {
+        scrollToSection('arena');
+      } else if (product === 'isis' || product === 'isis-agenda') {
+        scrollToSection('isis-agenda');
+      } else {
+        // 3. Verificar o hash '#...'
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+          scrollToSection(hash);
+        }
       }
     }
   }, []);
