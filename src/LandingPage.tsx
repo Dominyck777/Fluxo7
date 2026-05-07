@@ -437,8 +437,22 @@ function IsisCharacter() {
             </ul>
 
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 32 }}>
-              <a href="#arena" className="btn btn-arena">Ver na Arena</a>
-              <a href="#isis-agenda" className="btn btn-isis">Ver no Ísis Agenda</a>
+              <a 
+                href={`https://wa.me/5534998936088?text=${encodeURIComponent('Olá! Tenho interesse no Fluxo7Arena.')}`} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-arena"
+              >
+                Quero o Fluxo7Arena
+              </a>
+              <a 
+                href={`https://wa.me/5534998936088?text=${encodeURIComponent('Olá! Tenho interesse no Ísis Agenda.')}`} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-isis"
+              >
+                Quero o Ísis Agenda
+              </a>
             </div>
           </div>
         </div>
