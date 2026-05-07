@@ -382,25 +382,26 @@
 .features-header-isis-tag {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  padding: 10px 24px 10px 10px;
+  gap: 18px;
+  padding: 12px 32px 12px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(56,189,248,0.35);
-  background: rgba(56,189,248,0.08);
-  font-size: 1rem;
+  border: 1px solid rgba(56,189,248,0.4);
+  background: rgba(56,189,248,0.12);
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--isis-light);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 .features-header-isis-icon {
-  width: 42px;
-  height: 42px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(56,189,248,0.4);
-  box-shadow: 0 0 12px rgba(56,189,248,0.25);
+  border: 2px solid rgba(56,189,248,0.5);
+  box-shadow: 0 0 15px rgba(56,189,248,0.4);
 }
 .features-grid {
   display: grid;

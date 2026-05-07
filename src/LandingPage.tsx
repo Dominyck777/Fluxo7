@@ -533,6 +533,33 @@ function Footer() {
 
 // ─── LANDING PAGE ────────────────────────────────────────────────────────────
 export default function LandingPage() {
+  useEffect(() => {
+    // Função para scroll suave
+    const scrollToSection = (id: string) => {
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500); // Pequeno delay para garantir que o layout renderizou
+    };
+
+    // 1. Verificar parâmetro de query '?p=...'
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get('p');
+    if (product === 'arena') {
+      scrollToSection('arena');
+    } else if (product === 'isis' || product === 'isis-agenda') {
+      scrollToSection('isis-agenda');
+    } else {
+      // 2. Se não houver param, verificar o hash '#...'
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        scrollToSection(hash);
+      }
+    }
+  }, []);
+
   return (
     <>
       <Navbar />
