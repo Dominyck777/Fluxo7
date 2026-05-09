@@ -351,7 +351,7 @@ function ArenaFeatures() {
         <div className="features-header">
           <img src="/fluxo7arenacomp.png" alt="Fluxo7Arena" className="features-header-logo" />
           <h2 className="section-title">
-            Gestão completa para <span style={{ color: 'var(--arena-brand)' }}>sua arena</span>
+            Gestão completa para <span style={{ color: 'var(--arena-brand)' }}>sua Quadra</span>
           </h2>
           <p className="section-desc">
             Do agendamento ao financeiro, tudo em um único sistema pensado para quem vive o esporte.
