@@ -425,13 +425,12 @@ function IsisAgendaFeatures() {
 }
 
 // ─── MOCKUP ISIS CHAT ──────────────────────────────────────────────────────────
-function MockupIsisChat({ type, avatar, title, msg, companyLogo, companyName, bottomLogo }: any) {
+function MockupIsisChat({ type, avatar, msg, companyLogo, companyName, bottomLogo }: any) {
   const isArena = type === 'arena';
 
   const themeColor = isArena ? '#f59e0b' : '#0ea5e9';
   const themeLight = isArena ? 'rgba(245, 158, 11, 0.15)' : 'rgba(14, 165, 233, 0.15)';
   const themeBorder = isArena ? 'rgba(245, 158, 11, 0.4)' : 'rgba(14, 165, 233, 0.4)';
-  const bubbleBg = isArena ? '#fbbf24' : '#0ea5e9';
 
   return (
     <div className={`mockup-isis-chat ${type}-theme`}>
